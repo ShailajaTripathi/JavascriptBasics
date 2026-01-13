@@ -85,7 +85,7 @@ They are **mutable** and stored **by reference** in memory.
 
 ---
 
-## 🔹 Array
+## Array
 
 An **Array** is used to store multiple values in a single variable.
 
@@ -216,7 +216,7 @@ console.log(arr)
 ````
 
 
-#### ES6+ (Higher order Function )
+#### 🔖 ES6+ (Higher order Function )
 
 #### map():change each and every items in array return a new array
 ```
@@ -253,7 +253,7 @@ const [first,second]=arr //storing the first and the second value inside first a
 console.log("Array Destructuing",first,second)
 ````
 
-## object :
+## 🟢 object :
 ```
  let obj={
    firstName:"Mohit",
@@ -288,7 +288,7 @@ console.log("Object Destructuing",firstName,lastName)
  obj.age = 25;     // ❌ not allowed
  ```
 
- ## Spread and rest operators [...]
+ ## 🟢 Spread and rest operators [...]
  
  ### Spread operator expands or shallow copy arrays / object 
  ```
@@ -302,7 +302,7 @@ let[one,...rest]=arr1//Destructuing by rest operators
  console.log("rest operator :",one ,rest)
  
  ```
- ## Loop : loops are used to repeat of block of code multipl times depending on the condition 
+ ## 🔺Loop : loops are used to repeat of block of code multipl times depending on the condition 
  
 ### for loop:best why to know how many time to loop
 ```
@@ -343,7 +343,7 @@ for(let key in obj){
   console.log("Object values by for in loop ",obj[key])
 }
 ```
-## conditional statement 
+## 🔺 conditional statement 
 ### if condition:Runs the block only if condition is true 
 ```
 let  age=18;
@@ -406,7 +406,7 @@ switch (day){
 };
 ```
 
-## scope--
+## 🔺 scope--
  
 ### Global scope ----------------//
  ```
@@ -426,7 +426,7 @@ test()
  
  ```
 
- ##  Dom:(Document object model)
+ ## 🟢 Dom:(Document object model)
   #### Select: geteElementById(),geteElementByClassName(),quarrySelector(),quarrySelectorAll()
  #### Content : element.textContent="Hello",element.innerhtml=<p> this is new paragraph </p>
  #### Style :element.style.color="red",element.style.backgroundColor="yellow"
@@ -442,7 +442,7 @@ test()
 
 
 
- ## Asynchronous JavaScript :callstack ,webAPI,macrotaskqueue,microtask queue(higher priority ),eventLoop 
+ ## 🟢 Asynchronous JavaScript: callstack ,webAPI,macrotaskqueue,microtask queue(higher priority ),eventLoop 
  
  ### Promise 
  ```
@@ -476,7 +476,7 @@ myPromise().then((result)=>{
  getData();
 ```
 
- ## Closure:A function bind together with its lexical environment is called  closure.
+ ## 🟢 Closure: A function bind together with its lexical environment is called  closure.
  
  ### Simple Closure function 
  ```

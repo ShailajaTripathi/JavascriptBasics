@@ -27,7 +27,7 @@ Each topic includes **clean explanations + code snippets** for quick revision.
 - Call, Apply & Bind  
 - API Fetch Example  
 
----
+---------------------------------------
 
 ## 🟢 Variables (var, let, const)
 

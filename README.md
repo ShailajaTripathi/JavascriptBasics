@@ -1,8 +1,10 @@
 # 📘 JavaScript Interview Notes (Beginner → Intermediate)
 
+----------------------------------
 This repository contains **well-structured JavaScript notes with examples**, covering all **core concepts frequently asked in interviews**.  
 Each topic includes **clean explanations + code snippets** for quick revision.
 
+---------------------------------
 
 ## 📌 Table of Contents
 

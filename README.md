@@ -31,7 +31,7 @@ Each topic includes **clean explanations + code snippets** for quick revision.
 
 ## 🟢 Variables (var, let, const)
 
-```js
+```
 var a = 10;
 a = 12;
 var a = 13;

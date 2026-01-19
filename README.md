@@ -147,7 +147,7 @@ higherodderfu()();
 let arr=[1,2,3,4,5]
 ```
 
-#### push():add element at end 
+#### push(): add element at end 
 ```
 arr.push(6)
 console.log(arr)
@@ -164,36 +164,36 @@ arr.unshift("apple")
 console.log(arr)
 ```
 
-### shift():remove frome beginning
+### shift(): remove frome beginning
 ```
 arr.shift();
 console.log(arr)
 ```
-#### .length:checks length of Array
+#### .length: checks length of Array
 ```
 console.log(arr.length)
 ```
 
-### includes():check if items is exists /present  and return true /
+### includes(): check if items is exists /present  and return true /
 ```
 console.log("includes method:",arr.includes(2))
 ```
-### indexOf():get index of items 
+### indexOf(): get index of items 
 ```
 console.log(arr.indexOf(3))//return 2
 ```
-### slice(): will cope part of array 
+### slice(): will cope part of an array 
 ```
 console.log( arr.slice(0,2))// 2 is excloduing index 
 ```
- #### splice ():add or remove atany position 
+ #### splice (): add or remove at any position 
  ```
  arr.splice(1,0,"banana")      
 console.log(arr)
 ```
 #### concat():combines array
 ```
- let res=arr.concat(array);//  it will not modify odd array but return a new arr 
+ let res=arr.concat(array);//  it will not modify an odd array but return a new array 
 console.log(res);
 ```
 ### join(): convert to string
@@ -201,12 +201,12 @@ console.log(res);
 let res1=arr.join(",")//seprated by commom
 console.log( res1) //return  a new string variable
 ```
-### reverse():reverse the array items 
+### reverse(): reverse the array items 
 ```
 arr.reverse()
 console.log(arr)
 ```
-### sort():sort the items
+### sort(): sort the items
 ```
 let result=arr.sort((a,b)=>a-b)
 console.log(result)
@@ -219,20 +219,20 @@ console.log(arr)
 
 #### 🔖 ES6+ (Higher order Function )
 
-#### map():change each and every items in array return a new array
+#### map(): change each and every items in an array or transforms an whole array and returns a new array
 ```
 let double=arr.map(num=>num*2)
 console.log(double);
 ```
 
-#### filter():select item based on condition 
+#### filter(): select item based on condition 
 ```
 let evennumber=arr.filter((num)=>{
   return num%2===0
 })
 console.log(evennumber)
 ```
-#### reduce(): combine all iteme into single value for ex. sum etc.
+#### reduce(): combine all items into single value, for example sum etc.
 ```
 let total=arr.reduce((acc,curr)=>{
   return acc=acc+curr
@@ -241,7 +241,7 @@ let total=arr.reduce((acc,curr)=>{
 console.log(total);
 ```
 
-#### find():find the first matching condition
+#### find(): find the first matching condition
 ```
 let firstelement=arr.find((num)=>{
  return num%2===0  
@@ -250,41 +250,41 @@ console.log(firstelement,"first even number ");
 ```
 #### Destructuing array 
 ```
-const [first,second]=arr //storing the first and the second value inside first and second variable
-console.log("Array Destructuing",first,second)
+const [first, second]=arr //storing the first and the second value inside a first and a second variable.
+console.log("Array Destructuring", first, second)
 ````
 
 ## 🟢 object :
 ```
  let obj={
-   firstName:"Mohit",
-   lastName:"Yadav",
+   firstName: "Mohit",
+   lastName: "Yadav",
    age:22
  }
  ```
- ###  Destructuing object :
+ ###  Destructuring object :
  ```
  const {firstName,lastName}=obj // storing keys of object 
-console.log("Object Destructuing",firstName,lastName) 
+console.log("Object Destructuring",firstName,lastName) 
  ````
- ### Object.keys():returns an array of an object's keys
+ ### Object.keys(): returns an array of an object's keys
  ````
  console.log("Object.keys() :",Object.keys(obj));
  ````
- ### Object.value():returns an array of an object's value 
+ ### Object.value(): returns an array of an object's value 
  ````
  console.log("Object.values():",Object.values(obj));
 ````
- ### Object.entries():returns an array of an object's key value pairs 
+ ### Object.entries(): returns an array of an object's key-value pairs 
  ```
  console.log("Object.entries():", Object.entries(obj));
 ````
- ### Object.assign():copies properties from one or more object into target object 
+ ### Object.assign(): copies properties from one or more objects into target object 
  ```
  let resobj=Object.assign({},obj,object)
  console.log("Object.assign() :",resobj);
  ```
- ### Object.freeze():Prevent addding, deleting ,uptading.
+ ### Object.freeze(): Prevent from addding, deleting ,uptading.
  ```
  obj.age = 25;     // ❌ not allowed
  ```
@@ -297,13 +297,13 @@ console.log("Object Destructuing",firstName,lastName)
  let arr2=[...arr1,800,900];// copys/ Spread  arr1 into arr2
  console.log("Spread operator :",arr2)
 ````
-### Rest operator collects remaning / rest element  for Destructuing etc 
+### Rest operator collects remaining / rest element for Destructuing etc 
 ```
 let[one,...rest]=arr1//Destructuing by rest operators 
  console.log("rest operator :",one ,rest)
  
  ```
- ## 🔺Loop : loops are used to repeat of block of code multipl times depending on the condition 
+ ## 🔺Loop: loops are used to repeat of block of code multipl times depending on the condition 
  
 ### for loop:best why to know how many time to loop
 ```

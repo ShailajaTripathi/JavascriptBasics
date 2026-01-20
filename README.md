@@ -136,11 +136,9 @@ let higherodderfu =()=>{
 }
 higherodderfu()();
 ```
-| arithmatic operators |comparision operators |logical operators |
+|Aarithmatic operators |Comparision operators |logical operators |
 |-----------------------|-----------------------|-----------------|
-|  + - * / %  |==( checks value only ) ,=== ( ckecks value and dataType both ), !=,!== ,<,> |  && ,||,! |
-
-
+|  + - * / %  |==( checks value only ) ,=== ( ckecks value and dataType both ), !=,!== ,<,> |  "&& ,||,!"  |
 
 
  ## Array methods 
@@ -175,7 +173,7 @@ console.log(arr)
 console.log(arr.length)
 ```
 
-### includes(): check if items is exists /present  and return true /
+### includes(): check if items is exist /present  and return true /
 ```
 console.log("includes method:",arr.includes(2))
 ```
@@ -410,7 +408,7 @@ switch (day){
 
 ## 🔺 scope--
  
-### Global scope ----------------//
+### Global scope ----------------
  ```
  let x=10;// global scope
  
@@ -430,9 +428,9 @@ test()
 
  ## 🟢 Dom:(Document object model)
   #### Select: geteElementById(),geteElementByClassName(),quarrySelector(),quarrySelectorAll()
- #### Content : element.textContent="Hello",element.innerhtml=<p> this is new paragraph </p>
- #### Style :element.style.color="red",element.style.backgroundColor="yellow"
- #### Events:element.EventListner("click",() => alert ("button clicked"))
+ #### Content: element.textContent="Hello",element.innerhtml=<p> this is new paragraph </p>
+ #### Style: element.style.color="red", element.style.backgroundColor="yellow"
+ #### Events: element.EventListner("click",() => alert ("button clicked"))
  ####  remove: element.remove()
  ####  Create : 
  ```
@@ -444,7 +442,7 @@ test()
 
 
 
- ## 🟢 Asynchronous JavaScript: callstack ,webAPI,macrotaskqueue,microtask queue(higher priority ),eventLoop 
+ ## 🟢 Asynchronous JavaScript: call-stack,webAPI,macrotaskqueue,micro-task queue(higher priority ),eventLoop 
  
  ### Promise 
  ```
@@ -463,7 +461,7 @@ myPromise().then((result)=>{
 })
  
  ````
- #### By Async and await keyward and try{} catch{} block 
+ #### By Async and await keyword and try{} catch{} block 
  ```
  async function getData(){
    try{
@@ -471,14 +469,14 @@ myPromise().then((result)=>{
      console.log(result);
    }
    catch(error){
-     console.log("Error",error)
+     console.log("Error, error)
    }
  } 
  
  getData();
 ```
 
- ## 🟢 Closure: A function bind together with its lexical environment is called  closure.
+ ## 🟢 Closure: A function bind together with its lexical environment is called a closure.
  
  ### Simple Closure function 
  ```
@@ -513,7 +511,7 @@ myPromise().then((result)=>{
  ## Session Storage : stores data until tab is closed or refresh.
  -  set: sessionstorage.setItem("user","Mohit")
  -   Get: sessionstorage.getItem("user")
- -   remove : sessionstorage.remove("user")
+ -   remove: sessionstorage.remove("user")
  
  
  ## call, Apply,bind All three are the function borrowing methods
@@ -529,12 +527,12 @@ myPromise().then((result)=>{
     console.log(` My name is ${this.name} I am ${this.age} year old and I am from ${city}`)
   }
 ```
-### call: Pass argument individuly
+### call: Pass argument individually
 ``
  demo.call(newobj,"Itarsi")
  ``
  
- ### Apply : passes argument as an array
+ ### apply: passes argument as an array
  ``
  demo.apply(newobj,["Bhopal"]);
  ``

@@ -136,10 +136,11 @@ let higherodderfu =()=>{
 }
 higherodderfu()();
 ```
+| arithmatic operators |comparision operators |logical operators |
+|-----------------------|-----------------------|-----------------|
+|  + - * / %  |==( checks value only ) ,=== ( ckecks value and dataType both ), !=,!== ,<,> |  && ,||,! |
 
-####  arithmatic operators  : + - * / %
-#### comparision operators: ==( checks value only ) ,=== ( ckecks value and dataType both ), !=,!== ,<,> 
-#### logical operators : && ,||,!
+
 
 
  ## Array methods 
@@ -147,29 +148,29 @@ higherodderfu()();
 let arr=[1,2,3,4,5]
 ```
 
-#### push(): add element at end 
+#### push(): add element at the end 
 ```
 arr.push(6)
 console.log(arr)
 ```
-#### pop() : remove from end
+#### pop(): remove from end
 ```
 arr.pop()
 console.log(arr);
 ```
 
- #### unshift(): add at element at beginning
+ #### unshift(): add an element at beginning
  ```
 arr.unshift("apple")
 console.log(arr)
 ```
 
-### shift(): remove frome beginning
+### shift(): remove from beginning
 ```
 arr.shift();
 console.log(arr)
 ```
-#### .length: checks length of Array
+#### .length: checks the length of an Array
 ```
 console.log(arr.length)
 ```
@@ -182,7 +183,7 @@ console.log("includes method:",arr.includes(2))
 ```
 console.log(arr.indexOf(3))//return 2
 ```
-### slice(): will cope part of an array 
+### slice(): will copy a part of an array 
 ```
 console.log( arr.slice(0,2))// 2 is excloduing index 
 ```
@@ -219,7 +220,7 @@ console.log(arr)
 
 #### 🔖 ES6+ (Higher order Function )
 
-#### map(): change each and every items in an array or transforms an whole array and returns a new array
+#### map(): change every item in an array or transform a whole array and returns a new array
 ```
 let double=arr.map(num=>num*2)
 console.log(double);
@@ -232,7 +233,7 @@ let evennumber=arr.filter((num)=>{
 })
 console.log(evennumber)
 ```
-#### reduce(): combine all items into single value, for example sum etc.
+#### reduce(): combine all items into a single value, for example, sum etc.
 ```
 let total=arr.reduce((acc,curr)=>{
   return acc=acc+curr

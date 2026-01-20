@@ -136,9 +136,9 @@ let higherodderfu =()=>{
 }
 higherodderfu()();
 ```
-|Aarithmatic operators |Comparision operators |logical operators |
+|Aarithmatic operators |  Comparision operators |logical operators |
 |-----------------------|-----------------------|-----------------|
-|  + - * / %  |==( checks value only ) ,=== ( ckecks value and dataType both ), !=,!== ,<,> |  "&& ,||,!"  |
+|  + - * / %  | ==( checks value only ) , === ( ckecks value and dataType both ), !=,!== ,<,> |  && (AND), \|\| (OR) ,!(NOT) |
 
 
  ## Array methods 
@@ -278,40 +278,40 @@ console.log("Object Destructuring",firstName,lastName)
  ```
  console.log("Object.entries():", Object.entries(obj));
 ````
- ### Object.assign(): copies properties from one or more objects into target object 
+ ### Object.assign(): copies properties from one or more objects into a target object 
  ```
- let resobj=Object.assign({},obj,object)
+ let resobj= bject.assign({},obj,object)
  console.log("Object.assign() :",resobj);
  ```
- ### Object.freeze(): Prevent from addding, deleting ,uptading.
+ ### Object.freeze(): Prevent from addding, deleting, uptading.
  ```
  obj.age = 25;     // ❌ not allowed
  ```
 
  ## 🟢 Spread and rest operators [...]
  
- ### Spread operator expands or shallow copy arrays / object 
+ ### Spread operator expands or shallow copy an arrays / object 
  ```
  let arr1=[100,200,300,400]
  let arr2=[...arr1,800,900];// copys/ Spread  arr1 into arr2
  console.log("Spread operator :",arr2)
 ````
-### Rest operator collects remaining / rest element for Destructuing etc 
+### Rest operator collects remaining / rest element for Destructuring etc 
 ```
 let[one,...rest]=arr1//Destructuing by rest operators 
  console.log("rest operator :",one ,rest)
  
  ```
- ## 🔺Loop: loops are used to repeat of block of code multipl times depending on the condition 
+ ## 🔺Loop: loops are used to repeat of a block of code multiple times depending on the condition 
  
-### for loop:best why to know how many time to loop
+### for loop: Best when we know how many time to loop
 ```
 for(let i=0;i<arr.length;i++){
   console.log("for Loop:",arr[i]))
 }
 
 ````
-### while loop:when you don't know how many times of but only the condition 
+### while loop: when you don't know how many times of but only the condition 
 ```
 let i=0;
 while(i<arr.length){
@@ -320,31 +320,31 @@ i++
 }
 
 ```
-### Do while loop:similer to while while loop but run at least if condition is false 
+### Do while loop: similar to while loop but run at least if condition is false 
 ```
 let j=0;
 do{
   console.log("Do While Loop:",arr[j]);
   
 }
-while   (j>0);
+while (j>0);
 
 ````
-### For of Loop: used to Loop throught  array or string
+### For of Loop: used to Loop through an array or string
 ```
 for(let i of arr){
   console.log("array elements by For of Loop",i)
 }
 ```
 
-### For in Loop: used to loop througth object Properties 
+### For in Loop: used to loop through object Properties 
 ```
 for(let key in obj){
   console.log("Object values by for in loop ",obj[key])
 }
 ```
 ## 🔺 conditional statement 
-### if condition:Runs the block only if condition is true 
+### if condition: Runs the block only if condition is true 
 ```
 let  age=18;
 if(age>=18){
@@ -461,7 +461,7 @@ myPromise().then((result)=>{
 })
  
  ````
- #### By Async and await keyword and try{} catch{} block 
+ #### By async and await keyword and try{} catch{} block 
  ```
  async function getData(){
    try{
@@ -501,7 +501,7 @@ myPromise().then((result)=>{
  parent();
  ```
 
- ## Local Storage : stores data in browser parmanently even after page is refresh or closed
+ ## Local-Storage : stores data in browser parmanently even after page is refresh or closed
  
  - set: localstorage.setItem("user","Mohit")
 - Get: localstorage.getItem("user")
@@ -515,11 +515,11 @@ myPromise().then((result)=>{
  
  
  ## call, Apply,bind All three are the function borrowing methods
- ## this refers to  owner object 
+ ## this refers to owner object 
 
 ```  
   let newobj={
-    name:"Mohit Yadav",
+    name: "Mohit Yadav",
     age:21
   }
   
@@ -536,7 +536,7 @@ myPromise().then((result)=>{
  ``
  demo.apply(newobj,["Bhopal"]);
  ``
- ### bind :returns a new function to run later 
+ ### bind: returns a new function to run later 
  ```
  let results =demo.bind(newobj,"Indore")
  results();
@@ -548,13 +548,13 @@ myPromise().then((result)=>{
  async function users(){
    try{
      let result = await fetch("https://jsonplaceholder.typicode.com/posts/1") //  1 call the api using fetch 
-     // 2 convert the result  into json
+     // 2 convert the result  into JSON
       let  data = await result.json()
       // 3 use data
       console.log("API user data ",data)
    }
    catch(error){
-     console.log("Error",error)
+     console.log("Error", error)
    }
  }
  
@@ -566,4 +566,3 @@ myPromise().then((result)=>{
 
 ### Shailaja Tripathi
  React Developer
- 

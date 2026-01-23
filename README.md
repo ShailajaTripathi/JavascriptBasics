@@ -1,12 +1,12 @@
 # 📘 JavaScript Interview Notes (Beginner → Intermediate)
 
-----------------------------------
+---------------------------
 This repository contains **well-structured JavaScript notes with examples**, covering all **core concepts frequently asked in interviews**.  
 Each topic includes **clean explanations + code snippets** for quick revision.
 
 --------------------------
 
-## 📌 Table of Contents :
+## 📌 Table of Contents 
 
 - Variables & Scope  
 - Data Types  
@@ -290,7 +290,7 @@ console.log("Object Destructuring",firstName,lastName)
 
  ## 🟢 Spread and rest operators [...]
  
- ### Spread operator expands or shallow copy an arrays / object 
+ ### Spread operator expands or shallow copies an array or object 
  ```
  let arr1=[100,200,300,400]
  let arr2=[...arr1,800,900];// copys/ Spread  arr1 into arr2

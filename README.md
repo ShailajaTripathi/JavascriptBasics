@@ -6,7 +6,7 @@ Each topic includes **clean explanations + code snippets** for quick revision.
 
 --------------------------
 
-## 📌 Table of Contents
+## 📌 Table of Contents :
 
 - Variables & Scope  
 - Data Types  

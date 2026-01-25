@@ -1981,7 +1981,7 @@ These methods allow you to set the `this` value explicitly and borrow methods fr
 
 Calls a function with a given `this` value and arguments provided **individually**.
 
-```javascript
+```js
 function greet(greeting, punctuation) {
   console.log(`${greeting}, I'm ${this.name}${punctuation}`);
 }
@@ -2045,7 +2045,7 @@ Math.max.apply(null, ages); // 35
 
 Returns a **new function** with `this` bound to the provided value. Doesn't execute immediately.
 
-```javascript
+```
 function greet(greeting, punctuation) {
   console.log(`${greeting}, I'm ${this.name}${punctuation}`);
 }
@@ -2192,6 +2192,17 @@ Modern JavaScript introduced powerful features to write cleaner, faster, and mor
 - Optional chaining
 - Nullish coalescing
 
+```js
+const user = { name: "Alex", age: 25 };
+
+const greet = ({ name }) => `Hello ${name}!`;
+
+const numbers = [1, 2, 3];
+const newNumbers = [...numbers, 4];
+
+console.log(greet(user));
+```
+
 ### Why It Matters:
 ES6+ is the industry standard. Most modern frameworks like React rely heavily on these features.
 
@@ -2207,6 +2218,23 @@ Handles operations that take time such as API calls, file loading, and timers wi
 - `async/await`
 - Chaining promises
 - Error handling in async code
+
+ ```js
+
+  function fetchData() {
+  return new Promise(resolve => {
+    setTimeout(() => resolve("Data loaded"), 1000)
+  })
+}
+
+async function loadData() {
+  const result = await fetchData();
+  console.log(result);
+}
+
+loadData();
+
+```
 
 ### Why It Matters:
 Async programming is essential for building fast, responsive web applications.
@@ -2224,6 +2252,23 @@ The JavaScript engine mechanism that manages asynchronous tasks.
 - Microtask Queue
 - Promise execution
 
+```js
+console.log("Start");
+
+setTimeout(() => {
+  console.log("Timeout");
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log("Promise");
+});
+
+console.log("End");
+
+// Start → End → Promise → Timeout
+
+```
+
 ### Why It Matters:
 Understanding the event loop helps debug async behavior and write optimized code.
 
@@ -2240,6 +2285,16 @@ Techniques to handle runtime issues gracefully.
 - Promise error handling
 - Debugging best practices
 
+```
+try {
+  const data = JSON.parse("invalid json");
+} catch (error) {
+  console.error("Something went wrong:", error.message);
+} finally {
+  console.log("Execution completed");
+}
+
+```
 ### Why It Matters:
 Proper error handling prevents crashes and improves user experience.
 
@@ -2255,6 +2310,14 @@ Interact with and update HTML elements dynamically using JavaScript.
 - Event listeners
 - Class & style updates
 - Form handling
+```
+const button = document.querySelector("button");
+
+button.addEventListener("click", () => {
+  document.body.style.background = "lightblue";
+});
+
+```
 
 ### Why It Matters:
 DOM manipulation powers interactive web applications.
@@ -2272,6 +2335,13 @@ Store data in the browser for persistence.
 - Retrieving & deleting data
 - Use cases
 
+```
+localStorage.setItem("user", JSON.stringify({ name: "Alex" }));
+
+const user = JSON.parse(localStorage.getItem("user"));
+console.log(user.name);
+
+```
 ### Why It Matters:
 Used for saving user preferences, auth tokens, and app state.
 
@@ -2286,7 +2356,18 @@ Organize JavaScript code into reusable files.
 - Named vs default exports
 - Module scope
 - Code reusability
+```
+//  - named export - 
+//  math.js
+export function add(a, b) {
+  return a + b;
+}
 
+// main.js
+import { add } from "./math.js";
+console.log(add(2, 3));
+
+```
 ### Why It Matters:
 Modules keep code clean, scalable, and maintainable.
 
@@ -2302,7 +2383,16 @@ Communicating with backend services and external APIs.
 - Handling JSON
 - Error responses
 - Loading states
+```
+async function getUsers() {
+  const response = await fetch("https://api.example.com/users");
+  const data = await response.json();
+  console.log(data);
+}
 
+getUsers();
+
+```
 ### Why It Matters:
 APIs power real-world applications, like dashboards, e-commerce, and authentication.
 
@@ -2320,7 +2410,22 @@ A curated set of frequently asked JavaScript interview questions with explanatio
 - Shallow vs deep copy
 - Var vs let vs const
 - Array & object tricks
+```
+// Clousers Example 
+function outer() {
+  let count = 0;
 
+  return function inner() {
+    count++;
+    return count;
+  };
+}
+
+const counter = outer();
+console.log(counter());
+console.log(counter());
+
+```
 ### Why It Matters:
 Strengthens conceptual clarity and boosts interview confidence.
 
@@ -2341,14 +2446,6 @@ Strengthens conceptual clarity and boosts interview confidence.
 2. Practice each concept with code  
 3. Review interview questions regularly  
 4. Build mini-projects using learned concepts  
-
----
-
-## 🎯 Who This Is For
-
-- Beginner to intermediate JavaScript learners  
-- Frontend developers preparing for interviews  
-- React developers strengthening JS fundamentals  
 
 ---
 

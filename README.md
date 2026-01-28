@@ -4,7 +4,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Level](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-blue)
-![Purpose](https://img.shields.io/badge/Purpose-Skill%20Inhancement-orange)
+![Purpose](https://img.shields.io/badge/Purpose-Skill%20Enhancement-orange)
 
 A structured and practical JavaScript repository covering everything from core concepts to advanced topics with real-world examples and interview-focused explanations.
 

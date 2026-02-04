@@ -1,4 +1,4 @@
-# 🚀 JavaScript Mastery Roadmap  -------------------
+# 🚀 JavaScript Mastery Roadmap  
 ### From Fundamentals to Advanced + Interview Preparation
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow)

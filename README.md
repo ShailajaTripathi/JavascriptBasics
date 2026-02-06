@@ -7,6 +7,7 @@
 ![Purpose](https://img.shields.io/badge/Purpose-Skill%20Enhancement-orange)
 
 ----
+
 A structured and practical JavaScript repository covering everything from core concepts to advanced topics with real-world examples and interview-focused explanations.
 This repo serves as a **complete JavaScript reference + preparation guide for frontend developers and React engineers.**
 

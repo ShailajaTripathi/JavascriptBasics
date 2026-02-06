@@ -10,7 +10,6 @@ A structured and practical JavaScript repository covering everything from core c
 
 This repo serves as a **complete JavaScript reference + preparation guide for frontend developers and React engineers.**
 
----------------------------
 
 ## 🎯 Why This Repository?
 
